@@ -51,34 +51,101 @@ export const dayDetails = {
         description: "If you have a good quality photo, use it! Make sure it's well-lit, has a clean background, and shows your face clearly. Dress professionally but naturally. Smile. Crop it to a headshot. Avoid group photos, selfies, or overly filtered images."
       },
       {
-        title: "Option 2 — Generate a Profile Photo with AI (Gemini)",
-        description: "No professional photo? No problem. Use Google Gemini to generate a realistic professional headshot. Here are ready-to-use prompts:",
+        title: "AI Profile Photo Prompts — For Men",
+        description: "No professional photo? No problem. Use Google Gemini to generate a realistic professional headshot. Copy any of these prompts, paste into Gemini, and download your new profile picture.",
         problems: [
           {
-            title: "Prompt for Men",
-            code: `Generate a professional LinkedIn headshot of a young Indian man in his early 20s. He is wearing a smart casual outfit (plain shirt or blazer). The background is soft and neutral (light gray or blurred office). The lighting is natural and warm. The expression is confident and approachable with a slight smile. The image should look realistic, high-resolution, and suitable for a LinkedIn profile photo.`,
-            explanation: "Paste this into Gemini (Image Generation). Download the result and upload it as your LinkedIn profile picture."
+            title: "Prompt 1 — Business Suit (Upload Your Photo)",
+            code: `Create a professional portrait of the person in the uploaded image for a LinkedIn profile photo. The person should have a subtle smile, conveying a professional and confident demeanor. The personal should be dressed in a black business suit, with sharp, realistic features and an authentic touch. The background should be gray, with a well-lit environment. The image must be extremely detailed, rendered in 4K 360 HD resolution`,
+            explanation: "Upload your own photo along with this prompt. Gemini will transform it into a professional headshot while keeping your face."
           },
           {
-            title: "Prompt for Women",
-            code: `Generate a professional LinkedIn headshot of a young Indian woman in her early 20s. She is wearing a smart casual outfit (plain blouse or blazer). The background is soft and neutral (light gray or blurred office). The lighting is natural and warm. The expression is confident and approachable with a slight smile. The image should look realistic, high-resolution, and suitable for a LinkedIn profile photo.`,
-            explanation: "Paste this into Gemini (Image Generation). Download the result and upload it as your LinkedIn profile picture."
+            title: "Prompt 2 — Business Formal (No Photo Needed)",
+            code: `Create a high-quality, professional LinkedIn headshot of a confident working professional. The person is wearing business formal attire with a blazer and a neutral-colored shirt. Facial expression is calm, friendly, and confident with a slight smile. Use soft studio lighting, sharp focus, and realistic skin tones. Background should be clean, minimal, and slightly blurred in light grey. The image should look like it was taken with a DSLR camera, suitable for a LinkedIn profile photo`,
+            explanation: "No photo needed — Gemini will generate a completely new professional headshot for you."
+          },
+          {
+            title: "Prompt 3 — Software Developer / Tech",
+            code: `Generate a professional LinkedIn headshot of a software developer wearing smart casual attire. Neutral background, soft lighting, confident expression, modern professional look, high-resolution image`,
+            explanation: "Great for tech roles. Short and effective — Gemini fills in the details."
+          },
+          {
+            title: "Prompt 4 — Creative Freelancer",
+            code: `Create a professional LinkedIn profile photo of a creative freelancer. Clean background, natural lighting, friendly smile, modern outfit, realistic and polished appearance`,
+            explanation: "Perfect for designers, content creators, and freelancers who want a modern but professional look."
           }
         ]
       },
       {
-        title: "Generate Your LinkedIn Banner / Cover Photo",
-        description: "Your banner should tell people what you do at a glance. Use these prompts to generate a professional cover photo:",
+        title: "AI Profile Photo Prompts — For Women",
+        description: "Same process — copy the prompt, paste into Google Gemini, and download your professional headshot.",
         problems: [
           {
-            title: "Prompt — Personal Brand Banner",
-            code: `Generate a professional LinkedIn banner (1584x396 pixels) with a modern, minimal dark theme. Include the text "[Your Name]" on the left side in a clean bold font, and a short tagline like "Aspiring [Your Role] | Building in Public" on the right. Use subtle geometric patterns or gradients in the background. Keep it clean, professional, and easy to read. Colors: dark navy or black background with white and gold/yellow accents.`,
-            explanation: "Replace [Your Name] and [Your Role] with your actual details. You can also create banners using Canva with free LinkedIn banner templates."
+            title: "Prompt 1 — Corporate Professional (Upload Your Photo)",
+            code: `Create a realistic, professional LinkedIn headshot of a confident female professional. She is well-groomed, wearing formal business attire such as a blazer or professional dress. Neutral background, soft studio lighting, natural skin tones, sharp facial details, minimal makeup, professional hairstyle, and a friendly confident expression. Corporate style, high resolution, DSLR-quality photo, suitable for LinkedIn profile`,
+            explanation: "Upload your own photo for best results. Gemini will enhance it into a polished corporate headshot."
           },
           {
-            title: "Prompt — Skills-Focused Banner",
-            code: `Generate a professional LinkedIn banner (1584x396 pixels) with a clean modern design. On the left, show a professional workspace illustration. On the right side, display 3-4 skill keywords like "UI/UX Design | Web Development | Content Creation" in a clean, modern font. Use a dark gradient background with subtle tech-inspired elements. The overall feel should be minimal and professional.`,
-            explanation: "Customize the skills to match your target role. This works great for tech, design, and marketing profiles."
+            title: "Prompt 2 — Corporate Executive",
+            code: `Professional LinkedIn headshot of a corporate female executive wearing a navy or black blazer, neutral background, confident posture, subtle makeup, soft lighting, realistic skin texture, business formal look, high-resolution professional photography`,
+            explanation: "Ideal for leadership, management, or corporate roles. Clean and powerful."
+          },
+          {
+            title: "Prompt 3 — Female Software Engineer / Tech",
+            code: `Realistic LinkedIn profile photo of a female software engineer wearing smart casual professional clothing, clean background, confident expression, modern tech professional style, natural lighting, sharp focus`,
+            explanation: "Perfect for women in tech — software engineers, data scientists, product managers."
+          }
+        ]
+      },
+      {
+        title: "Generate Your LinkedIn Banner with AI",
+        description: "Your banner is the first thing people see when they visit your profile. Follow these 5 steps to create a stunning one with AI:",
+        topics: [
+          { name: "Go to Gemini & paste the prompt below" },
+          { name: "Answer the 6 quick questions it asks" },
+          { name: "Upload a reference photo of yourself" },
+          { name: "Make edits in the same chat" },
+          { name: "Download & upload to LinkedIn" }
+        ],
+        problems: [
+          {
+            title: "The Ultimate LinkedIn Banner Prompt",
+            code: `Act as a professional LinkedIn Banner Designer.
+
+Your goal is to generate a high-converting, visually vibrant, and professional LinkedIn banner that fits the 1584 x 396 pixel dimension perfectly. The design should be dynamic and stand out.
+
+Because you cannot generate this exact aspect ratio, you must generate a Wide (16:9) image, but you must concentrate the design into a thin horizontal strip in the absolute vertical center of the canvas.
+
+To ensure the user can crop this correctly:
+1. The top 35% of the image must be empty background color.
+2. The bottom 35% of the image must be empty background color.
+3. All content (Text, CTA, Face) must be squeezed into the middle 30% strip.
+
+Before generating the image, please ask me for the following details so you can customize the design. Stop and wait for my response after asking:
+
+1. What is the Primary Headline?
+2. What is the Secondary Tagline?
+3. What is the Call to Action (CTA) text?
+4. What Social Proof, stats, or client logos should be included?
+5. What are your Brand Colours (Hex codes)?
+6. Please upload the realistic photo of yourself. Additionally, specify any REALISTIC professional changes you want made to your appearance (e.g., "Change my polo to a dark suit").
+
+Once I provide these details, generate the banner adhering strictly to these layout rules within the central middle strip:
+
+Layout Rules (Applied ONLY to the middle 30% of the image):
+
+1. CTA Placement (Strict): The CTA button must be anchored precisely in the top-left corner of the central strip. It should be positioned high up, above the level of the subject's shoulder.
+
+2. Subject Appearance (Realistic & Professional): Place the modified user photo in the center-left of the strip. Apply the requested changes but maintain a high-quality, realistic photographic style. Do NOT apply cartoon filters.
+
+3. Headline and Tagline: Place the Headline on the right side of the strip, with the Tagline directly below it. Keep the text compact.
+
+4. Social Proof: Place logos or stats in a small, clean row at the bottom-right of the strip.
+
+5. Background (Vibrant & Geometric): Do not use a plain, flat background. Create a dynamic and modern background using your brand colors. Incorporate subtle geometric shapes, abstract lines, or a professional gradient pattern to add depth, energy, and a high-end feel. Ensure these background elements are subtle enough behind the text to maintain perfect legibility.
+
+Please start by asking me the questions.`,
+            explanation: "This is an interactive prompt — Gemini will ask you 6 questions before generating your banner. Just answer them and it will create a custom banner with your photo, brand colors, and headline."
           }
         ]
       },

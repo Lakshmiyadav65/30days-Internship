@@ -2,16 +2,11 @@ import React, { useState } from 'react'
 import { dayResources, dayDetails } from '../resources'
 import './DayDetailPage.css'
 
-const sectionIcons = {
-  0: '💡',
-  1: '📸',
-  2: '👔',
-  3: '👗',
-  4: '🎨',
-  5: '🔍',
-  6: '🚀',
-  7: '📝',
-  8: '🎯',
+const defaultIcons = ['💡', '📸', '👔', '👗', '🎨', '🔍', '🚀', '📝', '🎯']
+
+const dayIcons = {
+  1: ['💡', '📸', '👔', '👗', '🎨', '🔍'],
+  2: ['💡', '✍️', '📝', '🤖'],
 }
 
 function DayDetailPage({ day, onBack }) {
@@ -98,7 +93,7 @@ function DayDetailPage({ day, onBack }) {
                     onClick={() => toggleSection(index)}
                   >
                     <div className="section-header-left">
-                      <span className="section-icon">{sectionIcons[index] || '📌'}</span>
+                      <span className="section-icon">{(dayIcons[day] || defaultIcons)[index] || '📌'}</span>
                       <div>
                         <span className="section-number">Section {String(index + 1).padStart(2, '0')}</span>
                         <span className="section-title">{section.title}</span>

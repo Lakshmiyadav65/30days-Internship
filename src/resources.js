@@ -5,7 +5,7 @@
 
 export const dayResources = {
   1: { title: "LinkedIn Profile Picture & Banner Setup" },
-  2: { title: "Identify Your Niche & Target Roles" },
+  2: { title: "LinkedIn Headline & About Section" },
   3: { title: "LinkedIn Profile Setup from Scratch" },
   4: { title: "Crafting the Perfect LinkedIn Headline" },
   5: { title: "Writing a LinkedIn About Section That Sells" },
@@ -160,6 +160,140 @@ Please start by asking me the questions.`,
           { title: "Punit — Web dev personal brand", link: "https://www.linkedin.com/in/punitweb/" },
           { title: "Saptarshi — Clean & minimal approach", link: "https://www.linkedin.com/in/saptarshipr/" },
           { title: "Felix Haas — Founder-level branding", link: "https://www.linkedin.com/in/felixhhaas/" }
+        ]
+      }
+    ]
+  },
+  2: {
+    sections: [
+      {
+        title: "Why Your Headline & About Section Matter",
+        description: "Your headline is the first text anyone reads after your name — it shows up in search results, connection requests, and comments. A strong headline tells recruiters exactly who you are and what you're looking for. Your About section is where you tell your complete story — it's the place where a recruiter decides if you're a serious candidate. Together, they decide whether someone clicks 'Connect' or scrolls past you."
+      },
+      {
+        title: "Crafting the Perfect LinkedIn Headline",
+        description: "Your headline has a 220-character limit. Use every word wisely. Follow these 3 simple rules:",
+        topics: [
+          { name: "Rule 1 — Who You Are", count: "Identity" },
+          { name: "Rule 2 — Your Skills", count: "Value" },
+          { name: "Rule 3 — What You Want", count: "Intent" }
+        ],
+        problems: [
+          {
+            title: "Step 1 — Start with Who You Are",
+            approach: "Lead with your current role or aspiration. This instantly tells people what you do.",
+            code: `"Aspiring Software Engineer"
+"Final Year CSE Student"`,
+            explanation: "Pick the one that best describes your current situation. Be honest — 'Aspiring' is perfectly fine if you're still learning."
+          },
+          {
+            title: "Step 2 — Add Your Key Skills",
+            approach: "List 2-3 of your strongest or most relevant skills separated by pipes ( | ).",
+            code: `"Python | Java | React"
+"UI/UX Design | Figma | User Research"
+"Content Writing | SEO | Social Media"
+"Data Analysis | SQL | Power BI"`,
+            explanation: "Only list skills you can actually talk about in an interview. Quality over quantity."
+          },
+          {
+            title: "Step 3 — State What You Want",
+            approach: "End with a clear call to action so recruiters know you're actively looking.",
+            code: `"Open to Internships 2025"
+"Seeking SDE Internship Opportunities"
+"Looking for Marketing Internship Roles"
+"Open to Freelance & Internship Opportunities"`,
+            explanation: "This is the hook — recruiters literally search for keywords like 'open to internships'. Make it easy for them to find you."
+          },
+          {
+            title: "Full Headline Examples",
+            approach: "Combine all 3 rules into one powerful headline. Here are some examples you can directly copy and customize:",
+            code: `"Aspiring Software Engineer | Python | Java | Open to Internships 2025"
+
+"Final Year CSE Student | React | Node.js | Seeking SDE Internship"
+
+"UI/UX Designer | Figma | User Research | Open to Design Internships"
+
+"B.Tech CSE '25 | Data Science | Python | SQL | Actively Seeking Internships"`,
+            explanation: "The format is simple: [Who You Are] | [Skills] | [What You Want]. Copy any of these and replace with your own details."
+          }
+        ]
+      },
+      {
+        title: "Writing Your About Section",
+        description: "Your About section is your complete story — the place where a recruiter reads and decides if you're a serious candidate. Write it in 4 clear parts:",
+        topics: [
+          { name: "Part 1 — Who You Are (in one line)" },
+          { name: "Part 2 — What You Do (skills & projects)" },
+          { name: "Part 3 — What You Achieved (certifications, hackathons)" },
+          { name: "Part 4 — Call to Action (open to internships — connect!)" }
+        ],
+        problems: [
+          {
+            title: "Part 1 — Who You Are (1 line)",
+            approach: "Open with a single line that introduces you. Keep it confident and clear.",
+            code: `"I'm a final year Computer Science student at XYZ University, passionate about building software that solves real problems."
+
+"I'm an aspiring data analyst with a strong foundation in Python, SQL, and data visualization."`,
+            explanation: "This first line is what people see before clicking 'See more' — make it count."
+          },
+          {
+            title: "Part 2 — What You Do (Skills & Projects)",
+            approach: "Talk about what you've built, what tools you use, and what excites you technically.",
+            code: `"I work with Python, Java, and React to build web applications. My recent projects include a task management app and an AI-powered resume screener."
+
+"I specialize in UI/UX design using Figma and have designed interfaces for 3 startup MVPs."`,
+            explanation: "Be specific — mention actual projects, tools, and technologies. Generic statements like 'I'm a hard worker' add zero value."
+          },
+          {
+            title: "Part 3 — What You've Achieved",
+            approach: "Highlight anything that proves you've done real work — hackathons, certifications, competitions, open-source contributions, or even personal milestones.",
+            code: `"I was a finalist at XYZ Hackathon and have contributed to 2 open-source projects on GitHub."
+
+"I participated in Smart India Hackathon and built a working prototype in 36 hours."
+
+"I completed Google Data Analytics Certification and earned HackerRank Gold Badge in Python."
+
+"I've solved 200+ DSA problems on LeetCode and published 10+ technical articles on Medium."`,
+            explanation: "Don't overthink it — even small achievements count. Participated in a hackathon? Mention it. Completed a certification? Add it. Built something on your own? That's proof of work."
+          },
+          {
+            title: "Part 4 — Call to Action",
+            approach: "End with what you're looking for and invite people to connect.",
+            code: `"I'm currently open to internship opportunities in software development. If you're hiring or know someone who is — I'd love to connect!"
+
+"Open to internships in data science and analytics. Feel free to reach out — I'm always happy to chat about tech and career growth!"`,
+            explanation: "This is your CTA — tell them exactly what to do next. When a recruiter reads this, they should know you're actively looking and easy to reach."
+          }
+        ]
+      },
+      {
+        title: "AI Prompt — Auto-Generate Your Headline & About Section",
+        description: "Not confident about writing it yourself? No worries! Just fill in your details in this prompt and paste it into ChatGPT or Gemini — it will automatically generate a personalized LinkedIn headline and about section for you.",
+        problems: [
+          {
+            title: "Copy This Prompt & Fill Your Details",
+            code: `You are a LinkedIn profile expert. Based on my details, generate a professional LinkedIn Headline and About Section.
+
+My Details:
+- Name: [Your Name]
+- Degree: [Your Degree & Branch]
+- Year: [Current Year of Study]
+- Skills: [List your skills]
+- Projects: [Mention 1-2 projects]
+- Certifications: [Any certifications]
+- Goal: [What internship are you looking for]
+- Achievements: [Any achievements or hackathons]
+
+Generate:
+1. Strong LinkedIn Headline (under 220 characters)
+2. Professional About Section (under 2000 characters)
+   - Who I am
+   - What I do
+   - What I achieved
+   - Call to action
+Keep tone professional yet approachable.`,
+            explanation: "Replace the [placeholders] with your actual details. The AI will generate a tailored headline and about section — then tweak it to sound like you. It's that simple!"
+          }
         ]
       }
     ]
